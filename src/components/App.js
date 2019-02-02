@@ -14,7 +14,7 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<Router>
-					<Analytics id={process.env.GOOGLE_ANALYTICS_UID}>
+					<Analytics id={process.env.REACT_APP_GOOGLE_ANALYTICS_UID}>
 						<PageRouter/>
 					</Analytics>
 				</Router>
