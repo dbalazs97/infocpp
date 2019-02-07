@@ -22,7 +22,7 @@ export default function ContactPage() {
 						<Card.Description>Tartalomfejlesztés, design, programozás.</Card.Description>
 					</Card.Content>
 					<Card.Content extra>
-						<Icon name={"mail"}/> colorplay@protonmail.com
+						<Icon name={"mail"}/> <a href={'mailto:colorplay@protonmail.com'}>colorplay@protonmail.com</a>
 					</Card.Content>
 				</Card>
 				<Card>
@@ -33,10 +33,14 @@ export default function ContactPage() {
 						<Card.Description>Tartalomfejlesztés, DevOps, üzemeltetés.</Card.Description>
 					</Card.Content>
 					<Card.Content extra>
-						<Icon name={"mail"}/> colorplay@protonmail.com
+						<Icon name={"mail"}/> <a href={'mailto:colorplay@protonmail.com'}>colorplay@protonmail.com</a>
 					</Card.Content>
 				</Card>
 			</Card.Group>
+			<hr/>
+			<h5>Forráskód</h5>
+			<p>Az oldal forráskódja elérhető GitHubon. Ha hibát találsz szívesen fogadjuk az Issue-kat és Pull request-eket.</p>
+			<p><a href="https://github.com/dbalazs97/infocpp" target={'_blank'} rel="noopener noreferrer"><Icon name={'github'}/> InfoCPP GitHub</a></p>
 			<hr/>
 			<h5>Felhasznált eszközök</h5>
 			<Segment>

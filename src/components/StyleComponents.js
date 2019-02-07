@@ -27,11 +27,11 @@ export const Block = ({type, children}) => {
 };
 
 // Syntax Highlighter
-export const Syntax = (props) => {
+export const Syntax = ({language = 'cpp', children}) => {
 	return (
 		<React.Fragment>
 			<Popup
-				trigger={<button className="copy-button" onClick={() => navigator.clipboard.writeText(props.children)}><Icon inverted color={'green'} name={'copy'}/></button>}
+				trigger={<button className="copy-button" onClick={() => navigator.clipboard.writeText(children)}><Icon inverted color={'green'} name={'copy'}/></button>}
 				content={'Másolva'}
 				on={'click'}
 				position={'top center'}
@@ -39,8 +39,8 @@ export const Syntax = (props) => {
 				inverted
 			/>
 
-			<SyntaxHighlighter language="cpp" style={atomDark}>
-				{props.children}
+			<SyntaxHighlighter language={language} style={atomDark}>
+				{children}
 			</SyntaxHighlighter>
 		</React.Fragment>
 	);

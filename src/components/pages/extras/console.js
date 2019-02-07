@@ -17,7 +17,7 @@ export default class Console extends Component {
 				<p>
 					<a href="http://tapiov.net/rlutil/docs/HTML/files/rlutil-h.html"><Icon name={'book'}/> RlUtil dokumentáció</a><br/>
 					<a href="https://github.com/tapio/rlutil"><Icon name={'github'}/> RlUtil GitHub</a><br/>
-					<a href="download/rlutil.h" download="rlutil.h"><Icon name={'download'}/> RlUtil letöltése</a><br/>
+					<a href="https://www.uniforum.hu/download/appendix/rlutil.h" download="rlutil.h"><Icon name={'download'}/> RlUtil letöltése</a><br/>
 				</p>
 
 				<h5>Használat</h5>

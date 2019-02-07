@@ -13,6 +13,7 @@ const ExtrasPage = lazy(() => import( "./pages/extras"));
 const AppendixPage = lazy(() => import( "./pages/extras/appendix"));
 const ConsolePage = lazy(() => import( "./pages/extras/console"));
 const UMLPage = lazy(() => import( "./pages/extras/uml"));
+const HFTestPage = lazy(() => import( "./pages/extras/hftest"));
 const lessons = [
 	lazy(() => import( `./pages/lessons/lesson1`)),
 	lazy(() => import( `./pages/lessons/lesson2`)),
@@ -76,6 +77,7 @@ export default withRouter(
 							<Route path="/extras/appendix" component={AppendixPage} exact/>
 							<Route path="/extras/console" component={ConsolePage} exact/>
 							<Route path="/extras/uml" component={UMLPage} exact/>
+							<Route path="/extras/hftest" component={HFTestPage} exact/>
 							<Route path="/extras" component={ExtrasPage}/>
 							<Route path="/contact" component={ContactPage}/>
 						</Switch>
